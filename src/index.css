@@ -2,7 +2,9 @@
 @import "tailwindcss";
 
 
-
+*{
+  scroll-behavior: smooth;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -33,6 +35,11 @@ html, body {
     @apply sm:px-10 px-5;
   }
 
+  .tech-logo {
+    @apply w-10 h-10 rounded-md p-2   backdrop-filter backdrop-blur-lg flex justify-center items-center;
+  }
+
+ 
   .btn {
     @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-zinc-800 transition-all active:scale-95 text-white mx-auto;
   }
@@ -62,6 +69,37 @@ html, body {
     @apply text-[#afb0b6] text-base text-sm ;
   }
 
+  .social-icon {
+    @apply w-12 h-12 rounded-full flex justify-center items-center bg-zinc-900 border border-black;
+  }
+
+  .contact-container {
+    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
+  }
+
+  .head-text {
+    @apply sm:text-4xl text-3xl font-semibold ;
+  }
+
+  .field-label {
+    @apply text-[1rem] text-white;
+  }
+  
+  .field-input {
+    @apply w-full bg-zinc-900 px-5 py-2 min-h-14 rounded-lg placeholder:text-zinc-400 text-[0.95rem] text-white 
+    shadow-black/70 shadow-2xl focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-zinc-900;
+  }
+  
+  .field-btn {
+    @apply bg-indigo-600 px-5 py-2 min-h-10 rounded-lg shadow-black/70 shadow-2xl flex justify-center items-center text-lg text-white gap-3 hover:bg-indigo-500 transition;
+  }
+  
+  .field-btn_arrow {
+    @apply w-2.5 h-2.5 object-contain invert brightness-0;
+  }
+  
+
+
   .waving-hand{
     animation-name: wave-animation;
     animation-duration: 2.5s;
@@ -89,6 +127,10 @@ html, body {
       @apply text-center xl:text-4xl md:text-3xl sm:text-[2rem] text-[1.5rem] font-black !leading-normal;
     }
   
+    
+  .head-text {
+    @apply sm:text-4xl text-3xl font-semibold  ;
+  }
 }
 
 
